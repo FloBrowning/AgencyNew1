@@ -1,74 +1,133 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FLO Browning Agency</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Visa_stamp.jpg/1920px-Visa_stamp.jpg') no-repeat center center fixed;
-      background-size: cover;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
       color: white;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .overlay {
+      background: rgba(0,0,0,0.7);
+      min-height: 100vh;
+      padding: 40px 20px;
     }
     header {
-      background-color: rgba(0, 0, 0, 0.75);
-      padding: 40px 20px;
       text-align: center;
+      margin-bottom: 40px;
     }
-    .about-box {
-      background-color: rgba(0, 0, 0, 0.75);
-      margin: 30px auto;
-      padding: 30px;
-      max-width: 800px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255, 0, 128, 0.5);
+    header img {
+      max-height: 100px;
+      margin-bottom: 20px;
     }
-    .btn {
-      background-color: #ff00cc;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 15px;
-      font-weight: bold;
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
     }
-    .switch-lang {
+    header p {
+      font-size: 18px;
+    }
+    .lang-switch {
       position: absolute;
       top: 20px;
       right: 20px;
-      background-color: #00ffff;
+    }
+    .lang-switch a {
+      background: #00ffff;
       color: #000;
-      padding: 5px 10px;
-      border-radius: 5px;
+      padding: 6px 12px;
       text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    main {
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      background-color: rgba(255,255,255,0.05);
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+    h2 {
+      color: #00ffff;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .cta {
+      display: inline-block;
+      background: #ff00cc;
+      padding: 12px 24px;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <a href="index-en.html" class="switch-lang">RU</a>
+<div class="overlay">
+  <div class="lang-switch">
+    <a href="index.html">RU</a>
+  </div>
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Globe_icon.svg/1024px-Globe_icon.svg.png" class="logo" alt="Logo" style="max-width:100px;">
+    <img src="logo.jpeg" alt="FLO Browning Agency">
     <h1>FLO Browning Agency</h1>
-    <p>Visas, residence permits, jobs — EU, UK, USA & more</p>
+    <p>Your path to visas, residence permits, jobs, and global opportunities</p>
   </header>
+
   <main>
-    <div class="about-box">
-      <h2>About the Company</h2>
-      <p><strong>FLO Browning Agency</strong> — это ваш надёжный гид в мире международной миграции и путешествий. Мы сопровождаем клиентов на всех этапах оформления документов для виз, ВНЖ, трудоустройства, обучения и переезда за рубеж.</p>
-      <p>Наша команда предоставляет полный спектр услуг в более чем <strong>40 странах</strong>: от краткосрочных туристических виз до программ легализации и иммиграции. Мы работаем прозрачно, оперативно и на результат.</p>
-      <a href="programs.html" class="btn">View Programs</a>
-    </div>
+    <section>
+      <h2>About Us</h2>
+      <p><strong>FLO Browning Agency</strong> is more than just an agency. It's your compass in the world of opportunities. We assist those who dream of freedom of movement, legal work abroad, and a comfortable life in Europe, the UK, the USA, and beyond.</p>
+      <p>From the first step to full integration — we’re with you. With FLO Browning, dreams become visas, and goals — passports to the future.</p>
+      <p>We offer complete solutions for visas, employment, real estate, legal support, and a full range of services for travelers. With us, your world becomes easier and more accessible, and every dream becomes reality!</p>
+    </section>
+
+    <section>
+      <h2>Our Services</h2>
+      <ul>
+        <li><strong>Visa support:</strong> Schengen, work, student, tourist visas.</li>
+        <li><strong>Tours and visas:</strong> Travel planning, booking, and full assistance.</li>
+        <li><strong>Airline tickets:</strong> Booking at the best market prices.</li>
+        <li><strong>Employment:</strong> In the EU, UK, USA, and Canada.</li>
+        <li><strong>Residency & PR:</strong> Legalization, documentation, full support.</li>
+        <li><strong>Legal services:</strong> Immigration and international legal matters.</li>
+        <li><strong>Real estate:</strong> Buying, renting, and legal transaction support abroad.</li>
+      </ul>
+      <a href="programs-en.html" class="cta">View All Programs</a>
+    </section>
+
+    <section>
+      <h2>Why Choose Us</h2>
+      <ul>
+        <li><strong>Personalized Approach:</strong> Tailored to your goals and country.</li>
+        <li><strong>Professionalism:</strong> Experienced team with international expertise.</li>
+        <li><strong>Reliability:</strong> Legal, secure, and transparent processes.</li>
+        <li><strong>Flexibility:</strong> We adapt to your timeframes and budget.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:flobrowningagency@gmail.com" style="color:#00ffff;">flobrowningagency@gmail.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/447876602305" style="color:#00ffff;">+44 7876 602305</a></p>
+      <p>
+        <a href="https://t.me/FloBrowningAgency" style="color:#00ffff;">Telegram</a> |
+        <a href="https://www.instagram.com/flo_browning_agency" style="color:#00ffff;">Instagram</a> |
+        <a href="https://www.facebook.com/share/1FXdS2Dp2o/?mibextid=wwXIfr" style="color:#00ffff;">Facebook</a>
+      </p>
+    </section>
   </main>
-  <footer>
-    <p>Email: flobrowningagency@gmail.com | WhatsApp: +44 7876 602305</p>
-    <p>
-      <a href="https://t.me/FloBrowningAgency" target="_blank">Telegram</a> |
-      <a href="https://www.instagram.com/flo_browning_agency" target="_blank">Instagram</a> |
-      <a href="https://www.facebook.com/share/1FXdS2Dp2o/?mibextid=wwXIfr" target="_blank">Facebook</a>
-    </p>
-  </footer>
+</div>
 </body>
 </html>
