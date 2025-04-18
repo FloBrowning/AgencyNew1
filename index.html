@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head <link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FLO Browning Agency</title> <!-- SEO -->
-<meta name="description" content="FLO Browning Agency — оформление виз, ВНЖ, трудоустройство, недвижимость и поддержка за границей.">
-<meta name="keywords" content="визы, ВНЖ, работа, иммиграция, Flo Browning, travel, relocation, Европа, США, Канада">
-<meta name="author" content="FLO Browning Agency">
+  <title>FLO Browning Agency</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-<!-- Open Graph / Соцсети -->
-<meta property="og:title" content="FLO Browning Agency">
-<meta property="og:description" content="Оформим визы, трудоустроим, подберем жилье и поможем легализоваться за границей.">
-<meta property="og:image" content="https://flobrowning.com/preview.jpg">
-<meta property="og:url" content="https://flobrowning.com">
-<meta property="og:type" content="website">
+  <!-- SEO -->
+  <meta name="description" content="FLO Browning Agency — оформление виз, ВНЖ, работа и сопровождение за границей.">
+  <meta name="keywords" content="визы, ВНЖ, иммиграция, работа, Flo Browning, relocation, Европа, США">
+  <meta name="author" content="FLO Browning Agency">
+
+  <!-- Соцсети -->
+  <meta property="og:title" content="FLO Browning Agency">
+  <meta property="og:description" content="Оформление виз, трудоустройство и помощь за границей.">
+  <meta property="og:image" content="https://flobrowning.com/preview.jpg">
+  <meta property="og:url" content="https://flobrowning.com">
+  <meta property="og:type" content="website">
+
   <style>
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      color: white;
+      font-family: Arial, sans-serif;
       background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
+      color: white;
     }
     .overlay {
       background: rgba(0,0,0,0.7);
       min-height: 100vh;
       padding: 40px 20px;
     }
-    header {
-      text-align: center;
-      margin-bottom: 40px;
+    header { text-align: center; margin-bottom: 30px; }
+    header img { max-height: 100px; }
+    header h1 { margin: 20px 0 10px; font-size: 36px; }
+    nav { text-align: center; margin: 20px 0; }
+    nav a {
+      color: #00ffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
     }
-    header img {
-      max-height: 100px;
-      margin-bottom: 20px;
-    }
-    header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 18px;
-    }
+    nav a:hover { text-decoration: underline; }
     .lang-switch {
       position: absolute;
       top: 20px;
@@ -51,13 +52,9 @@
       background: #00ffff;
       color: #000;
       padding: 6px 12px;
-      text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
-    }
-    main {
-      max-width: 1000px;
-      margin: auto;
+      text-decoration: none;
     }
     section {
       background-color: rgba(255,255,255,0.05);
@@ -66,21 +63,41 @@
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(255,255,255,0.1);
     }
-    h2 {
-      color: #00ffff;
-    }
-    ul {
-      padding-left: 20px;
-    }
+    h2 { color: #00ffff; }
     .cta {
-      display: inline-block;
       background: #ff00cc;
-      padding: 12px 24px;
       color: white;
+      padding: 12px 24px;
       border-radius: 8px;
-      text-decoration: none;
       font-weight: bold;
-      margin-top: 20px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 15px;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    .whatsapp-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    #topBtn {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      z-index: 1000;
+      background: #00ffff;
+      color: #000;
+      border-radius: 50%;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -89,66 +106,80 @@
   <div class="lang-switch">
     <a href="index-en.html">EN</a>
   </div>
+
   <header>
     <img src="logo.jpeg" alt="FLO Browning Agency">
     <h1>FLO Browning Agency</h1>
     <p>Ваш путь к визам, ВНЖ, работе и новым возможностям</p>
   </header>
 
-  <main>
-    <section>
-      <h2>О компании</h2>
+  <nav>
+    <a href="#about">О нас</a>
+    <a href="#services">Услуги</a>
+    <a href="#why">Почему мы</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+
+  <main><section id="about">
+      <h2>О нас</h2>
       <p><strong>FLO Browning Agency</strong> — это больше, чем агентство. Это ваш компас в мире возможностей. Мы сопровождаем тех, кто мечтает о свободе перемещения, легальной работе за границей, комфортной жизни в Европе, Великобритании, США и других странах.</p>
       <p>От первых шагов до полной интеграции — мы рядом. С FLO Browning мечты обретают визу, а цели — паспорт в будущее.</p>
-      <p>FLO Browning Agency — ваш надежный партнер в мире международных услуг, который сделает ваш путь к мечте ярким и беззаботным! Мы предоставляем комплексные решения по визам, трудоустройству, недвижимости, юридическим вопросам, а также полный спектр услуг для путешественников. С нами ваш мир становится проще и доступнее, а каждое ваше желание превращается в реальность!</p>
     </section>
 
-    <section>
-      <h2>Наши услуги</h2>
+    <section id="services">
+      <h2>Услуги</h2>
       <ul>
-        <li><strong>Оформление виз:</strong> Шенгенские, рабочие, студенческие, туристические.</li>
-        <li><strong>Туры и визы:</strong> Подбор туров, бронирование, полное сопровождение.</li>
-        <li><strong>Авиабилеты:</strong> Заказ, бронь, лучшие цены на рынке.</li>
-        <li><strong>Трудоустройство:</strong> В ЕС, Великобритании, США и Канаде.</li>
-        <li><strong>ВНЖ и ПМЖ:</strong> Легализация, оформление документов, поддержка.</li>
-        <li><strong>Юридическая помощь:</strong> Все вопросы иммиграции и международного права.</li>
-        <li><strong>Недвижимость:</strong> Покупка, аренда, сопровождение сделок за границей.</li>
+        <li><strong>Визы:</strong> Шенгенские, рабочие, студенческие, туристические.</li>
+        <li><strong>Работа:</strong> В ЕС, Великобритании, Канаде, США.</li>
+        <li><strong>Недвижимость:</strong> Покупка и аренда жилья за границей.</li>
+        <li><strong>Юридическая помощь:</strong> Иммиграция, легализация, сопровождение.</li>
       </ul>
       <a href="programs.html" class="cta">Смотреть все программы</a>
     </section>
 
-    <section>
-      <h2>Почему выбирают нас</h2>
+    <section id="why">
+      <h2>Почему мы</h2>
       <ul>
-        <li><strong>Индивидуальный подход:</strong> решение под вашу цель и страну.</li>
-        <li><strong>Профессионализм:</strong> опытная команда, международная практика.</li>
-        <li><strong>Надежность:</strong> легальность, безопасность и прозрачность всех процессов.</li>
-        <li><strong>Гибкость:</strong> подстроимся под вас, сроки и бюджет.</li>
+        <li><strong>Индивидуальный подход:</strong> решения под каждую страну и клиента.</li>
+        <li><strong>Прозрачность:</strong> легальность, безопасность, опыт.</li>
+        <li><strong>Реальные кейсы:</strong> работаем с десятками стран.</li>
       </ul>
     </section>
 
-  <section>
-  <h2>Контакты</h2>
-  <p>
-    Email: <a href="mailto:info@flobrowning.com" style="color:#00ffff;">info@flobrowning.com</a><br>
-    WhatsApp: <a href="https://wa.me/447876602305" style="color:#00ffff;" target="_blank">+44 7876 602305</a>
-  </p>
-  <p>
-    <a href="https://t.me/FloBrowningAgency" style="color:#00ffff;" target="_blank">Telegram</a> |
-    <a href="https://www.instagram.com/flo_browning_agency" style="color:#00ffff;" target="_blank">Instagram</a> |
-    <a href="https://www.facebook.com/share/16Krm5GcAk/?mibextid=wwXIfr" style="color:#00ffff;" target="_blank">Facebook</a>
-  </p>
-</section>
+    <section id="contacts">
+      <h2>Контакты</h2>
+      <p>Email: <a href="mailto:info@flobrowning.com">info@flobrowning.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/447876602305" target="_blank">+44 7876 602305</a></p>
+      <p>
+        <a href="https://t.me/FloBrowningAgency" target="_blank">Telegram</a> |
+        <a href="https://www.instagram.com/flo_browning_agency" target="_blank">Instagram</a> |
+        <a href="https://www.facebook.com/share/16Krm5GcAk/?mibextid=wwXIfr" target="_blank">Facebook</a>
+      </p>
+    </section>
+
   </main>
+</div>
+
 <!-- WhatsApp -->
 <div class="whatsapp-float">
-  <a href="https://wa.me/447876602305" target="_blank" title="Написать в WhatsApp">
+  <a href="https://wa.me/447876602305" target="_blank">
     <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
   </a>
 </div>
+
+<!-- Кнопка "Наверх" -->
+<button onclick="topFunction()" id="topBtn" title="Наверх">↑</button>
+
+<script>
+  // Появление кнопки вверх
+  const topBtn = document.getElementById("topBtn");
+  window.onscroll = function() {
+    topBtn.style.display = (document.documentElement.scrollTop > 300) ? "block" : "none";
+  };
+  function topFunction() {
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
 </body>
 </html>
-</a></body >
-</html> 
-<!-- force rebuild after domain reset --> 
-<!-- republish trigger -->
