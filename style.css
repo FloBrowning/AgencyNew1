@@ -98,4 +98,18 @@ a {
 
 .whatsapp-icon:hover {
   transform: scale(1.1);
+}.nav-links {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+.nav-links a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #ff00cc;
 }
