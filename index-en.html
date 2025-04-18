@@ -5,44 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FLO Browning Agency</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-  <!-- SEO -->
-  <meta name="description" content="FLO Browning Agency — visas, residence permits, jobs, real estate and legal support abroad.">
-  <meta name="keywords" content="visa, residence permit, immigration, work abroad, relocation, FLO Browning, Europe, UK, USA">
+  <meta name="description" content="FLO Browning Agency — your guide to visas, relocation, jobs, and a new life abroad.">
+  <meta name="keywords" content="visa, work abroad, relocation, residence permit, FLO Browning, immigration, EU, UK, USA">
   <meta name="author" content="FLO Browning Agency">
-
-  <!-- Social preview -->
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#000000">
+  <link rel="canonical" href="https://flobrowning.com/index-en.html">
   <meta property="og:title" content="FLO Browning Agency">
-  <meta property="og:description" content="We help with visas, employment, housing, and legalization abroad.">
+  <meta property="og:description" content="Visas, jobs, relocation and legal support for your future abroad.">
   <meta property="og:image" content="https://flobrowning.com/preview.jpg">
-  <meta property="og:url" content="https://flobrowning.com">
+  <meta property="og:url" content="https://flobrowning.com/index-en.html">
   <meta property="og:type" content="website">
 
   <style>
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
     }
     .overlay {
-      background: rgba(0,0,0,0.7);
+      background: rgba(0, 0, 0, 0.75);
       min-height: 100vh;
       padding: 40px 20px;
     }
-    header { text-align: center; margin-bottom: 30px; }
-    header img { max-height: 100px; }
-    header h1 { margin: 20px 0 10px; font-size: 36px; }
-    nav { text-align: center; margin: 20px 0; }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      animation: fadeIn 1.5s ease;
+    }
+    header img {
+      max-height: 100px;
+      filter: drop-shadow(0 0 8px #00ffff);
+    }
+    header h1 {
+      font-size: 36px;
+      margin: 20px 0 10px;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff88;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 10px 0;
+      text-align: center;
+      z-index: 999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
     nav a {
       color: #00ffff;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      padding: 8px 12px;
+      transition: all 0.3s ease;
     }
-    nav a:hover { text-decoration: underline; }
+    nav a:hover {
+      background-color: #00ffff;
+      color: #000;
+      border-radius: 6px;
+    }
     .lang-switch {
       position: absolute;
       top: 20px;
@@ -57,13 +82,26 @@
       text-decoration: none;
     }
     section {
-      background-color: rgba(255,255,255,0.05);
+      background-color: rgba(255, 255, 255, 0.05);
       padding: 30px;
       margin-bottom: 30px;
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+      box-shadow: 0 0 15px rgba(255,255,255,0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
     }
-    h2 { color: #00ffff; }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      color: #ff00cc;
+      border-bottom: 2px solid #ff00cc55;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    ul { padding-left: 20px; }
     .cta {
       background: #ff00cc;
       color: white;
@@ -73,7 +111,9 @@
       text-decoration: none;
       display: inline-block;
       margin-top: 15px;
+      transition: background 0.3s ease;
     }
+    .cta:hover { background: #e600b8; }
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
@@ -98,86 +138,118 @@
       padding: 10px 15px;
       border: none;
       cursor: pointer;
+      font-weight: bold;
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 26px; }
+      nav a { display: inline-block; margin: 6px 8px; font-size: 14px; }
+      .lang-switch { top: 10px; right: 10px; font-size: 14px; }
+      .whatsapp-icon { width: 45px; height: 45px; }
+      #topBtn { bottom: 75px; right: 15px; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
-<div class="overlay">
-  <div class="lang-switch">
-    <a href="index.html">RU</a>
-  </div>
+  <div class="overlay">
+    <div class="lang-switch">
+      <a href="index.html">RU</a>
+    </div>
+    <header>
+      <img src="logo.jpeg" alt="FLO Browning Agency">
+      <h1>FLO Browning Agency</h1>
+      <p>Your trusted partner in visas, relocation, and international opportunities</p>
+    </header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#contacts">Contact</a>
+    </nav>
+    <main<section id="about">
+  <h2>About Us</h2>
+  <p><strong>FLO Browning Agency</strong> is more than just a visa company — we are your personal guide to building a new life abroad. Our mission is to help people move confidently, legally, and comfortably across borders, whether for work, study, relocation, or lifestyle change.</p>
 
-  <header>
-    <img src="logo.jpeg" alt="FLO Browning Agency">
-    <h1>FLO Browning Agency</h1>
-    <p>Your path to visas, residency, jobs, and new opportunities</p>
-  </header>
+  <p>We started with a simple goal: to make global mobility easy, honest, and personal. Today, we support individuals and families worldwide — from the first consultation to full integration in a new country.</p>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#why">Why Us</a>
-    <a href="#contacts">Contacts</a>
-  </nav>
+  <p>Every story is different. That’s why we listen first. We tailor each case based on your goals, budget, destination, and timeline — offering clear steps and real solutions.</p>
 
-  <main><section id="about">
-    <h2>About</h2>
-    <p><strong>FLO Browning Agency</strong> is more than an agency. We're your compass in the world of possibilities. We guide those who dream of freedom to move, work legally abroad, and enjoy a comfortable life in Europe, the UK, the USA, and more.</p>
-    <p>From the first steps to full integration — we're with you. With FLO Browning, dreams get a visa and goals get a passport to the future.</p>
-  </section>
+  <p><em>With FLO Browning, your dreams get a visa, and your plans get a future.</em></p>
+</section>
 
-  <section id="services">
-    <h2>Services</h2>
-    <ul>
-      <li><strong>Visa support:</strong> Schengen, work, student, tourist visas.</li>
-      <li><strong>Employment:</strong> Legal jobs in the EU, UK, USA, Canada.</li>
-      <li><strong>Real estate:</strong> Buy, rent, legal support abroad.</li>
-      <li><strong>Legal help:</strong> Immigration, legalization, international law.</li>
-    </ul>
-    <a href="programs.html" class="cta">See all programs</a>
-  </section>
+<section id="services">
+  <h2>Our Services</h2>
+  <ul>
+    <li><strong>Visa Support:</strong> Tourist, work, student, humanitarian, and business visas. We handle document prep, embassy bookings, and guidance — start to finish.</li>
+    <li><strong>Work Abroad:</strong> Job search, employment contracts, work permits, and housing in the EU, UK, USA, Canada, and Gulf countries.</li>
+    <li><strong>Relocation Programs:</strong> Digital nomad visas, remote worker residency, business immigration, and property-based residence permits.</li>
+    <li><strong>International Real Estate:</strong> Purchase and rental of apartments, homes, and investment properties in Turkey, the UAE, Europe, and the USA.</li>
+    <li><strong>Legal Assistance:</strong> Support with residency, immigration law, documentation, and refugee/asylum applications.</li>
+    <li><strong>Study & Academic Pathways:</strong> University admissions, student visa support, and summer exchange programs.</li>
+  </ul>
+  <a href="programs-en.html" class="cta">View All Programs</a>
+</section>
 
-  <section id="why">
-    <h2>Why Us</h2>
-    <ul>
-      <li><strong>Personal approach:</strong> Tailored to your country and goal.</li>
-      <li><strong>Transparency:</strong> Legal, safe, proven process.</li>
-      <li><strong>Experience:</strong> International team with real cases.</li>
-    </ul>
-  </section>
+<section id="why">
+  <h2>Why Clients Choose Us</h2>
+  <ul>
+    <li><strong>Tailored Approach:</strong> Every case starts with listening. We build a personalized plan that truly fits your needs and goals.</li>
+    <li><strong>International Expertise:</strong> Our team includes visa advisors, lawyers, recruiters, and relocation experts with global experience.</li>
+    <li><strong>Transparent Process:</strong> No hidden fees or vague promises — we keep it honest, clear, and realistic from day one.</li>
+    <li><strong>Full Support:</strong> Communication by email, WhatsApp, Telegram or phone — before, during, and after your move.</li>
+    <li><strong>Success Stories:</strong> Hundreds of clients have already relocated, legalized, found jobs, and started new chapters — with us at their side.</li>
+    <li><strong>Global Coverage:</strong> We work with 20+ countries and always stay updated on law changes, embassy rules, and real-world practices.</li>
+  </ul>
+</section>
 
-  <section id="contacts">
-    <h2>Contacts</h2>
-    <p>Email: <a href="mailto:info@flobrowning.com">info@flobrowning.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/447876602305" target="_blank">+44 7876 602305</a></p>
-    <p>
-      <a href="https://t.me/FloBrowningAgency" target="_blank">Telegram</a> |
-      <a href="https://www.instagram.com/flo_browning_agency" target="_blank">Instagram</a> |
-      <a href="https://www.facebook.com/share/16Krm5GcAk/?mibextid=wwXIfr" target="_blank">Facebook</a>
-    </p>
-  </section>
-
-  </main>
+<section id="contacts">
+  <h2>Contact Us</h2>
+  <p>Have a question or ready to start? Reach out and let’s explore your options together.</p>
+  <p>Email: <a href="mailto:info@flobrowning.com" style="color:#00ffff;">info@flobrowning.com</a></p>
+  <p>WhatsApp: <a href="https://wa.me/447876602305" style="color:#00ffff;" target="_blank">+44 7876 602305</a></p>
+  <p>
+    <a href="https://t.me/FloBrowningAgency" style="color:#00ffff;" target="_blank">Telegram</a> |
+    <a href="https://www.instagram.com/flo_browning_agency" style="color:#00ffff;" target="_blank">Instagram</a> |
+    <a href="https://www.facebook.com/share/16Krm5GcAk/?mibextid=wwXIfr" style="color:#00ffff;" target="_blank">Facebook</a>
+  </p>
+</section></main>
 </div>
 
-<!-- WhatsApp -->
+<!-- WhatsApp Button -->
 <div class="whatsapp-float">
-  <a href="https://wa.me/447876602305" target="_blank">
+  <a href="https://wa.me/447876602305" target="_blank" title="Message us on WhatsApp">
     <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
   </a>
 </div>
 
-<!-- Back to Top -->
-<button onclick="topFunction()" id="topBtn" title="Top">↑</button>
+<!-- Scroll to Top Button -->
+<button onclick="topFunction()" id="topBtn" title="Back to top">↑</button>
 
+<!-- Scripts -->
 <script>
+  // Scroll-to-top button
   const topBtn = document.getElementById("topBtn");
-  window.onscroll = function() {
+  window.onscroll = function () {
     topBtn.style.display = (document.documentElement.scrollTop > 300) ? "block" : "none";
   };
   function topFunction() {
     document.documentElement.scrollTop = 0;
   }
+
+  // Reveal sections on scroll
+  const sections = document.querySelectorAll("section");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.15 });
+
+  sections.forEach(section => observer.observe(section));
 </script>
 
 </body>
