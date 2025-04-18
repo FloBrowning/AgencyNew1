@@ -28,9 +28,34 @@
         small {
             color: #ccc;
         }
+    
+    a {
+        color: #00ffff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    a:hover {
+        color: #ff00cc;
+        text-shadow: 0 0 8px #ff00cc;
+    }
+    .nav-links {
+        text-align: center;
+        margin: 20px auto 40px;
+        font-size: 16px;
+    }
+    .nav-links a {
+        margin: 0 12px;
+    }
     </style>
 </head>
 <body>
+
+<div class="nav-links">
+  <a href="index.html">Главная</a> |
+  <a href="blog_en.html">EN</a>
+</div>
+
 <h1>Блог FLO Browning Agency</h1>
 
     <div class="blog-post">
@@ -95,4 +120,21 @@
 <p>Мы добились исключения и визы от европейского консульства — несмотря на закрытые границы. Этот кейс стал первым в череде "открывающих" и подтвердил наш принцип: невозможное возможно при грамотной стратегии и персональном подходе.</p>
         
     </div>
-    </body></html>
+    
+<!-- WhatsApp Button -->
+<a href="https://wa.me/447876602305" target="_blank" title="Написать в WhatsApp" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+">
+  <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp" style="
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+</a>
+
+</body></html>
